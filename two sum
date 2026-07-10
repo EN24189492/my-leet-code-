@@ -1,0 +1,15 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+     def twoSum(nums, target):
+    num_map = {}  # Stores value -> index
+
+    for i, num in enumerate(nums):
+        complement = target - num
+
+        if complement in num_map:
+            return [num_map[complement], i]
+
+        num_map[num] = i   
+    }
+};
